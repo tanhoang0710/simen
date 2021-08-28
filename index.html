@@ -1,0 +1,1606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNS Simen</title>
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+            <!-- Header -->
+            <div class="header-container">
+                <div class="grid wide">
+                    <header class="header">
+                        <section class="header__convert">
+                            <div class="header__language">  
+                                <img src="./img/usa-flag.jpg" alt="" class="header__language-flag">
+                                <span class="header__language-name">English</span>
+                                <i class='bx bx-caret-down'></i>
+                                <ul class="header__language-list">
+                                    <li class="header__language-item">
+                                        <a href="#" class="header__language-link">
+                                            <img src="./img/usa-flag.jpg" alt="" class="header__language-link-img">
+                                            <span class="header__language-link-name">USA</span>
+                                        </a>
+                                    </li>
+                                    <li class="header__language-item">
+                                        <a href="#" class="header__language-link">
+                                            <img src="./img/russian-flag.jpg" alt="" class="header__language-link-img">
+                                            <span class="header__language-link-name">RUSSIA</span>
+                                        </a>
+                                    </li>
+                                    <li class="header__language-item">
+                                        <a href="#" class="header__language-link">
+                                            <img src="./img/brazil-flag.jpg" alt="" class="header__language-link-img">
+                                            <span class="header__language-link-name">BRAZIL</span>
+                                        </a>
+                                    </li>
+                                    <li class="header__language-item">
+                                        <a href="#" class="header__language-link">
+                                            <img src="./img/france-flag.jpg" alt="" class="header__language-link-img">
+                                            <span class="header__language-link-name">FRANCE</span>
+                                        </a>    
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="header__currency">
+                                USD
+                                <i class='bx bx-caret-down'></i>
+                                <ul class="header__currency-list">
+                                    <li class="header__currency-item"><a href="#" class="header__currency-link">EUR</a></li>
+                                    <li class="header__currency-item"><a href="#" class="header__currency-link">USD</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <div class="header__menu-on-tablet">
+                            <input type="checkbox" hidden id="header__menu-on-tablet-checkbox">
+                            <nav>
+                                <a href="#" class="header__menu-link">
+                                    <i class="fas fa-user"></i>
+                                    <span class="header__menu-link-text">My Account</span>
+                                </a>
+
+                                <a href="#" class="header__menu-link">
+                                    <i class='bx bx-heart'></i>
+                                    <span class="header__menu-link-text">Wishlist</span>
+                                </a>
+
+                                <a href="#" class="header__menu-link">
+                                    <i class='bx bx-check-square'></i>
+                                    <span class="header__menu-link-text">Checkout</span>
+                                </a>
+
+                                <a href="#" class="header__menu-link">
+                                    <i class='bx bx-key'></i>
+                                    <span class="header__menu-link-text">Login</span>
+                                </a>
+                            </nav>
+                            <label for="header__menu-on-tablet-checkbox" >
+                                <i class="fas fa-anchor"></i>
+                            </label>
+                        </div>
+                        <nav class="header__menu">
+                                <a href="#" class="header__menu-link">
+                                    <i class="fas fa-user"></i>
+                                    <span class="header__menu-link-text">My Account</span>
+                                </a>
+
+                                <a href="#" class="header__menu-link">
+                                    <i class='bx bx-heart'></i>
+                                    <span class="header__menu-link-text">Wishlist</span>
+                                </a>
+
+                                <a href="#" class="header__menu-link">
+                                    <i class='bx bx-check-square'></i>
+                                    <span class="header__menu-link-text">Checkout</span>
+                                </a>
+
+                                <a href="#" class="header__menu-link">
+                                    <i class='bx bx-key'></i>
+                                    <span class="header__menu-link-text">Login</span>
+                                </a>
+                        </nav>
+                    </header>
+                </div>
+            </div>
+        </div>
+        <div class="grid wide">
+            <section class="intro">
+                <div class="row">
+                    <div class="col l-3 m-3 c-12">
+                        <a href="#" class="intro__logo-link">
+                            <img src="./img/logo.png" alt="" class="intro__logo">
+                        </a>
+                    </div>
+                    <div class="col l-3 m-3 c-4">
+                        <div class="intro__link">
+                            <div class="intro__img-wrap">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="intro__text">
+                                <a href="#" class="intro__desc">free delivery worldwide</a>
+                                <span class="intro__condition">On order over $100</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-3 c-4">
+                        <div class="intro__link">
+                            <div class="intro__img-wrap">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <div class="intro__text">
+                                <a href="#" class="intro__desc">up to 20% off cosy layers</a>
+                                <span class="intro__condition">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                    Voluptas quo modi similique rerum dicta, id nam accusamus ipsum reprehenderit aliquid, 
+                                    sapiente amet unde fuga. Aliquid ipsam enim ratione doloribus. Ipsum!</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-3 c-4">
+                        <div class="intro__link">
+                            <div class="intro__img-wrap">
+                                <i class="fas fa-gift"></i>
+                            </div>
+                            <div class="intro__text">
+                                <a href="#" class="intro__desc">buy 1 get 1 free</a>
+                                <span class="intro__condition">On order over $100</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="main__nav-wrapper">
+                <nav class="main__nav">
+                    <div class="main__nav-no-pc">
+                        <input type="checkbox" hidden id="main__nav-checkbox">
+                        <div class="main__nav-sub">
+                            <ul class="main__nav-sub-list">
+                                
+                                <input type="checkbox" hidden id="option-checkbox">
+                                <li class="main__nav-sub-item">
+                                    <a href="#" class="main__nav-sub-link">Home
+                                        <label for="option-checkbox">
+                                            <i class='main__nav-sub-icon--plus bx bx-plus-circle'></i>
+                                            <i class='main__nav-sub-icon--minus bx bx-minus-circle'></i>
+                                        </label>
+                                    </a>
+                                    <nav>
+                                        <a href="#">Home Page 1</a>
+                                        <a href="#">Home Page 2</a>
+                                        <a href="#">Home Page 3</a>
+                                        <a href="#">Home Page 4</a>
+                                        <a href="#">Home Page 5</a>
+                                    </nav>
+                                </li>
+                                <!-- <input type="checkbox" hidden id="option-checkbox"> -->
+                                <li class="main__nav-sub-item abc"><a href="#" class="main__nav-sub-link">
+                                    Furnishture
+                                    <i class='bx bx-plus-circle'></i>
+                                </a></li>
+                                <li class="main__nav-sub-item abc"><a href="#" class="main__nav-sub-link">
+                                    Coffee tables
+                                </a></li>
+                                <li class="main__nav-sub-item abc"><a href="#" class="main__nav-sub-link">
+                                    Sofas
+                                </a></li>
+                                <li class="main__nav-sub-item abc"><a href="#" class="main__nav-sub-link">
+                                    Bedroom furnishture
+                                    <i class='bx bx-plus-circle'></i>
+                                </a></li>
+                                <li class="main__nav-sub-item abc"><a href="#" class="main__nav-sub-link">
+                                    Shop
+                                    <i class='bx bx-plus-circle'></i>
+                                </a></li>
+                                <li class="main__nav-sub-item abc"><a href="#" class="main__nav-sub-link">
+                                    Blog
+                                    <i class='bx bx-plus-circle'></i>
+                                </a></li>
+                                <li class="main__nav-sub-item abc"><a href="#" class="main__nav-sub-link">
+                                    Shortcodes
+                                    <i class='bx bx-plus-circle'></i>
+                                </a></li>
+                                <li class="main__nav-sub-item abc"><a href="#" class="main__nav-sub-link">
+                                    Contact us
+                                </a></li>
+                            </ul>
+                        </div>
+                        <label for="main__nav-checkbox" class="main__nav-sub-hide">
+                            <i class="fas fa-bars"></i>
+                        </label>
+                        <label for="main__nav-checkbox" class="main__nav-sub-overlay"></label>
+                    </div>
+                    <ul class="main__nav-list">
+                        <li class="main__nav-item"><a href="#" class="main__nav-link main__nav-link--active">HOME</a></li>
+                        <li class="main__nav-item">
+                            <a href="#" class="main__nav-link">FURNITURE</a>
+                            <div class="furniture__menu">
+                                <!-- <div class="grid wide"> -->
+                                    <div class="row">
+                                        <div class="col l-3">
+                                            <h2 class="furniture__menu-heading">TABLE</h2>
+                                            <ul class="furniture__menu-list">
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Kitchen & Dining Room Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Folding Table</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Living Room Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Sofa Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">End Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Coffee Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Pedestal Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Home Office Desks</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col l-3">
+                                            <h2 class="furniture__menu-heading">TABLE</h2>
+                                            <ul class="furniture__menu-list">
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Kitchen & Dining Room Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Folding Table</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Living Room Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Sofa Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">End Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Coffee Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Pedestal Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Home Office Desks</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col l-3">
+                                            <h2 class="furniture__menu-heading">TABLE</h2>
+                                            <ul class="furniture__menu-list">
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Kitchen & Dining Room Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Folding Table</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Living Room Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Sofa Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">End Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Coffee Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Pedestal Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Home Office Desks</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col l-3">
+                                            <h2 class="furniture__menu-heading">TABLE</h2>
+                                            <ul class="furniture__menu-list">
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Kitchen & Dining Room Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Folding Table</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Living Room Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Sofa Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">End Tables</a></li>
+                                                <li class="furniture__menu-item"><a href="#" class="furniture__menu-link">Coffee Tables</a></li>
+                                                
+                                            </ul>
+                                        </div>
+                                        <div class="col l-6">
+                                            <img src="./img/furniture-menu.jpg" alt="" class="furniture__img">
+                                        </div>
+                                        <div class="col l-6">
+                                            <img src="./img/furniture-menu--2.jpg" alt="" class="furniture__img">
+                                        </div>
+                                    </div>
+                                <!-- </div> -->
+                            </div>
+                        </li>
+                        <li class="main__nav-item"><a href="#" class="main__nav-link">COFFE TABLES</a></li>
+                        <li class="main__nav-item"><a href="#" class="main__nav-link">SOFAS</a></li>
+                        <li class="main__nav-item">
+                            <a href="#" class="main__nav-link">BEDROOM FURNITURE</a>
+                            <div class="bedroom__menu">
+                                <div class="row">
+                                    <div class="col l-3">
+                                        <div class="bedroom__item-link">
+                                            <img src="./img/bedroom-itmg-1.png" alt="" class="bedroom__item-img">
+                                        </div>
+                                        <h2 class="bedroom__item-name">SOFA</h2>
+                                        <p class="bedroom__item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, tempora modi voluptatem expedita eveniet similique vero, earum maiores atque odio voluptates molestias cum, itaque vel. Dolorem eos est consectetur cum.</p>
+                                    </div>
+                                    <div class="col l-3">
+                                        <div class="bedroom__item-link">
+                                            <img src="./img/bedroom-itmg-2.png" alt="" class="bedroom__item-img">
+                                        </div>
+                                        <h2 class="bedroom__item-name">CHAIR</h2>
+                                        <p class="bedroom__item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, tempora modi voluptatem expedita eveniet similique vero, earum maiores atque odio voluptates molestias cum, itaque vel. Dolorem eos est consectetur cum.</p>
+                                    </div>
+                                    <div class="col l-3">
+                                        <div class="bedroom__item-link">
+                                            <img src="./img/bedroom-itmg-3.png" alt="" class="bedroom__item-img">
+                                        </div>
+                                        <h2 class="bedroom__item-name">BED</h2>
+                                        <p class="bedroom__item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, tempora modi voluptatem expedita eveniet similique vero, earum maiores atque odio voluptates molestias cum, itaque vel. Dolorem eos est consectetur cum.</p>
+                                    </div>
+                                    <div class="col l-3">
+                                        <div class="bedroom__item-link">
+                                            <img src="./img/bedroom-itmg-4.jpg" alt="" class="bedroom__item-img">
+                                        </div>
+                                        <h2 class="bedroom__item-name">FURNITURE CHEST</h2>
+                                        <p class="bedroom__item-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio, tempora modi voluptatem expedita eveniet similique vero, earum maiores atque odio voluptates molestias cum, itaque vel. Dolorem eos est consectetur cum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main__nav-item">
+                            <a href="#" class="main__nav-link">SHOP</a>
+                            <div class="shop__menu">
+                                <div class="row">
+                                    <div class="col l-4">
+                                        <h2 class="shop__menu-heading">product types</h2>
+                                        <ul class="shop__menu-list">
+                                            <li class="shop__menu-item"><a href="#" class="shop__menu-link">Simple Proudct</a></li>
+                                            <li class="shop__menu-item"><a href="#" class="shop__menu-link">Grouped Prouduct</a></li>
+                                            <li class="shop__menu-item"><a href="#" class="shop__menu-link">Variable Product</a></li>
+                                            <li class="shop__menu-item"><a href="#" class="shop__menu-link">Variable Product – Color</a></li>
+                                            <li class="shop__menu-item"><a href="#" class="shop__menu-link">Variable Product – Image</a></li>
+                                            <li class="shop__menu-item"><a href="#" class="shop__menu-link">External/Affiliate Product</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col l-4">
+                                        <h2 class="shop__menu-heading">shop pages</h2>
+                                        <ul class="shop__menu-list">
+                                            <li class="shop__menu-item"><a href="#" class="shop__menu-link">Shopping Cart</a></li>
+                                            <li class="shop__menu-item"><a href="#" class="shop__menu-link">Checkout</a></li>
+                                            <li class="shop__menu-item"><a href="#" class="shop__menu-link">My Account</a></li>
+                                            <li class="shop__menu-item"><a href="#" class="shop__menu-link">Wishlist</a></li>
+                                            <li class="shop__menu-item"><a href="#" class="shop__menu-link">404</a></li>
+                                            <li class="shop__menu-item"><a href="#" class="shop__menu-link">Product Tag</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col l-4">
+                                        <h2 class="shop__menu-heading">shop shortcodes</h2>
+                                        <ul class="shop__menu-list">
+                                            <li class="shop__menu-item"><a href="#" class="shop__menu-link">SNS Featured Categories</a></li>
+                                            <li class="shop__menu-item"><a href="#" class="shop__menu-link">SNS Product Tabs</a></li>
+                                            <li class="shop__menu-item"><a href="#" class="shop__menu-link">SNS Products</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main__nav-item main__nav-item--blog">
+                            <a href="#" class="main__nav-link">BLOG</a>
+                            <ul class="blog__list">
+                                <li class="blog__item"><a href="#" class="blog__link">Blog FullWidth</a></li>
+                                <li class="blog__item"><a href="#" class="blog__link">Blog FullWidth 2 Columns</a></li>
+                                <li class="blog__item"><a href="#" class="blog__link">Blog FullWidth 3 Columns</a></li>
+                                <li class="blog__item"><a href="#" class="blog__link">Blog Masonry</a></li>
+                                <li class="blog__item"><a href="#" class="blog__link">Blog Left Sidebar</a></li>
+                                <li class="blog__item"><a href="#" class="blog__link">Blog Right Sidebar</a></li>
+                                <li class="blog__item">
+                                    <a href="#" class="blog__link blog__link-has-submenu">
+                                        Single Post
+                                        <i class='bx bx-right-arrow-alt'></i>
+                                    </a>
+                                    <ul class="blog__submenu">
+                                        <li class="blog__submenu-item"><a href="#" class="blog__submenu-link">Standard Post</a></li>
+                                        <li class="blog__submenu-item"><a href="#" class="blog__submenu-link">Post Format – Gallery</a></li>
+                                        <li class="blog__submenu-item"><a href="#" class="blog__submenu-link">Post Format – Quote</a></li>
+                                        <li class="blog__submenu-item"><a href="#" class="blog__submenu-link">Post Format – Video</a></li>
+                                        <li class="blog__submenu-item"><a href="#" class="blog__submenu-link">Post Format – Link</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main__nav-item">
+                            <a href="#" class="main__nav-link">SHORTCODES</a>
+                            <div class="shortcodes__menu">
+                                <div class="row">
+                                    <div class="col l-4">
+                                        <h2 class="shortcodes__heading">SHORTCODES</h2>
+                                        <ul class="shortcodes__list">
+                                            <li class="shortcodes__item"><a href="#" class="shortcodes__link">Accordions</a></li>
+                                            <li class="shortcodes__item"><a href="#" class="shortcodes__link">Custom Heading</a></li>
+                                            <li class="shortcodes__item"><a href="#" class="shortcodes__link">Messages</a></li>
+                                            <li class="shortcodes__item"><a href="#" class="shortcodes__link">Progress Bar</a></li>
+                                            <li class="shortcodes__item"><a href="#" class="shortcodes__link">SNS Counter</a></li>
+                                            <li class="shortcodes__item"><a href="#" class="shortcodes__link">SNS Custom Box</a></li>
+                                            <li class="shortcodes__item"><a href="#" class="shortcodes__link">SNS Featured Categories</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col l-4">
+                                        <h2 class="shortcodes__heading">SHORTCODES</h2>
+                                        <ul class="shortcodes__list">
+                                            <li class="shortcodes__item"><a href="#" class="shortcodes__link">SNS Latest Posts</a></li>
+                                            <li class="shortcodes__item"><a href="#" class="shortcodes__link">SNS Member</a></li>
+                                            <li class="shortcodes__item"><a href="#" class="shortcodes__link">SNS Our Brand</a></li>
+                                            <li class="shortcodes__item"><a href="#" class="shortcodes__link">SNS Product Tabs</a></li>
+                                            <li class="shortcodes__item"><a href="#" class="shortcodes__link">SNS Products</a></li>
+                                            <li class="shortcodes__item"><a href="#" class="shortcodes__link">SNS Testimonials</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="shortcodes__img-wrap">
+                                            <img src="./img/shortcode.png" alt="" class="shortcodes__img">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main__nav-item"><a href="#" class="main__nav-link">CONTACT US</a></li>
+                    </ul>
+                </nav>
+                <div class="main__nav-right">
+                    <div class="nav__search">
+                        <i class='bx bx-search'></i>
+                        <div class="main__nav-search">
+                            <input type="text" class="main__nav-input" placeholder="Search entire store here ...">
+                            <button class="search-btn">SEARCH</button>
+                        </div>
+                    </div>
+                    <div class="nav__cart">
+                        <div class="nav__cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="nav__cart-info">
+                            <span class="nav__cart-quantity">0</span>
+                            <span class="nav__cart-type">( items )</span>
+                        </div>
+                        <div class="nav__cart-list">
+                            <span class="nav__cart-status">No products in the cart</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+    
+            <section class="content-box">
+                <div class="row">
+                    <div class="col l-6 m-6">
+                        <div class="content-left">
+                            <div class="slider">
+                                <div class="slides">
+                                    <input type="radio" id="slide1">
+                                    <input type="radio" id="slide2">
+                                    <input type="radio" id="slide3">
+                                    <img src="./img/01.png" alt="slide1" class="content-left__img slide-img1">
+                                    <!-- <img src="./img/2.png" alt="slide2" class="content-left__img slide-img2"> -->
+                                    <!-- <img src="./img/3.png" alt="slide3" class="content-left__img slide-img3"> -->
+                                </div>
+                                <!-- <div class="slide-btns">
+                                    <label for="slide1" class="slide-btn"></label>
+                                    <label for="slide2" class="slide-btn"></label>
+                                    <label for="slide3" class="slide-btn"></label>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col l-6 m-6">
+                        <div class="row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="content-right__top hover1">
+                                    <img src="./img/5.png" alt="" class="content-right__top-img">
+                                    <div class="hover1-overlay"></div>
+                                </div>
+                            </div>
+                            <div class="col l-6 m-6 c-12">
+                                <div class="content-right__banner-1 hover2">
+                                    <img src="./img/banner1-300x286.jpg" alt="" class="content-right__banner1-img">
+                                </div>
+                            </div>
+                            <div class="col l-6 m-6 c-12">
+                                <div class="content-right__banner-2 hover3">
+                                    <img src="./img/banner2-300x286.jpg" alt="" class="content-right__banner2-img">
+                                    <div class="hover3-overlay"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="items-filter">
+                <div class="filter-list">
+                    <input type="checkbox" hidden id="filter-list-checkbox">
+                    <nav>
+                        <a href="#" class="filter__link filter__link--active">Lastest</a>
+                        <a href="#" class="filter__link">Best Seller</a>
+                        <a href="#" class="filter__link">Featured</a>
+                    </nav>
+                    <label for="filter-list-checkbox" class="filter-list-icon">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                </div>
+                <div class="filter-option">
+                    <ul class="filter-option__list">
+                        <li class="filter-option__item"><a href="#" class="filter-option__link filter-option__link--active">LATEST</a></li>
+                        <li class="filter-option__item"><a href="#" class="filter-option__link">BEST SELLER</a></li>
+                        <li class="filter-option__item"><a href="#" class="filter-option__link">FEATURED</a></li>
+                    </ul>
+                </div>
+                <div class="items-list">
+                    <div class="row">
+                        <div class="col l-2-4 m-3 c-12">
+                            <a href="#" class="item-link">
+                                <div class="item item--sale">
+                                    <div class="item-img__wrap">
+                                        <img src="./img/17-215x260.jpg" alt="" class="item-img">
+                                        <div class="btn item-add-btn">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span>ADD TO CART</span>
+                                        </div>
+                                        <ul class="item-react__list">
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--add">
+                                                    <i class="fas fa-heart"></i>
+                                                    <span class="item-react__title">Add to Wishlist</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--compare item-react__link--has-border">
+                                                    <i class="fas fa-random"></i>
+                                                    <span class="item-react__title">Compare</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--view">
+                                                    <i class="far fa-eye"></i>
+                                                    <span class="item-react__title">Quick View</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="#" class="item-name__link">
+                                            <span class="item-name">Modular Modern</span>
+                                        </a>
+                                        <div class="item-price">
+                                            <span class="item-price--old">$ 9.00</span>
+                                            <span class="item-price--new">$ 7.00</span>
+                                        </div>
+                                        <div class="item-rate">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2-4 m-3 c-12">
+                            <a href="#" class="item-link">
+                                <div class="item item--rated">
+                                    <div class="item-img__wrap">
+                                        <img src="./img/26-215x260.jpg" alt="" class="item-img">
+                                        <div class="btn item-add-btn">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span>ADD TO CART</span>
+                                        </div>
+                                        <ul class="item-react__list">
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--add">
+                                                    <i class="fas fa-heart"></i>
+                                                    <span class="item-react__title">Add to Wishlist</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--compare item-react__link--has-border">
+                                                    <i class="fas fa-random"></i>
+                                                    <span class="item-react__title">Compare</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--view">
+                                                    <i class="far fa-eye"></i>
+                                                    <span class="item-react__title">Quick View</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="#" class="item-name__link">
+                                            <span class="item-name">Modular Modern</span>
+                                        </a>
+                                        <div class="item-price">
+                                            <span class="item-price--new">$ 10.00</span>
+                                        </div>
+                                        <div class="item-rate">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2-4 m-3 c-12">
+                            <a href="#" class="item-link">
+                                <div class="item item--sale">
+                                    <div class="item-img__wrap">
+                                        <img src="./img/10-215x260.jpg" alt="" class="item-img">
+                                        <div class="btn item-add-btn">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span>ADD TO CART</span>
+                                        </div>
+                                        <ul class="item-react__list">
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--add">
+                                                    <i class="fas fa-heart"></i>
+                                                    <span class="item-react__title">Add to Wishlist</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--compare item-react__link--has-border">
+                                                    <i class="fas fa-random"></i>
+                                                    <span class="item-react__title">Compare</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--view">
+                                                    <i class="far fa-eye"></i>
+                                                    <span class="item-react__title">Quick View</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="#" class="item-name__link">
+                                            <span class="item-name">Modular Modern</span>
+                                        </a>
+                                        <div class="item-price">
+                                            <span class="item-price--old">$ 3.00</span>
+                                            <span class="item-price--new">$ 2.00</span>
+                                        </div>
+                                        <div class="item-rate">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2-4 m-3 c-12">
+                            <a href="#" class="item-link">
+                                <div class="item">
+                                    <div class="item-img__wrap">
+                                        <img src="./img/24-215x260.jpg" alt="" class="item-img">
+                                        <div class="btn item-add-btn">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span>ADD TO CART</span>
+                                        </div>
+                                        <ul class="item-react__list">
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--add">
+                                                    <i class="fas fa-heart"></i>
+                                                    <span class="item-react__title">Add to Wishlist</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--compare item-react__link--has-border">
+                                                    <i class="fas fa-random"></i>
+                                                    <span class="item-react__title">Compare</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--view">
+                                                    <i class="far fa-eye"></i>
+                                                    <span class="item-react__title">Quick View</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="#" class="item-name__link">
+                                            <span class="item-name">Modular Modern</span>
+                                        </a>
+                                        <div class="item-price">
+                                            <span class="item-price--new">$ 13.00</span>
+                                        </div>
+                                        <div class="item-rate">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2-4 m-3 c-12">
+                            <a href="#" class="item-link">
+                                <div class="item">
+                                    <div class="item-img__wrap">
+                                        <img src="./img/3-215x260.jpg" alt="" class="item-img">
+                                        <div class="btn item-add-btn">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span>ADD TO CART</span>
+                                        </div>
+                                        <ul class="item-react__list">
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--add">
+                                                    <i class="fas fa-heart"></i>
+                                                    <span class="item-react__title">Add to Wishlist</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--compare item-react__link--has-border">
+                                                    <i class="fas fa-random"></i>
+                                                    <span class="item-react__title">Compare</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--view">
+                                                    <i class="far fa-eye"></i>
+                                                    <span class="item-react__title">Quick View</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="#" class="item-name__link">
+                                            <span class="item-name">Modular Modern</span>
+                                        </a>
+                                        <div class="item-price">
+                                            <span class="item-price--new">$ 14.00</span>
+                                        </div>
+                                        <div class="item-rate">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn item-load-more">LOAD MORE ITEMS</div>
+            </section>
+    
+            <section class="item-example">
+                <div class="row">
+                    <div class="col l-6 m-6 c-12">
+                        <div class="item-example__img-wrap">
+                            <img src="./img/call-to-action.jpg" alt="" class="item-example__img">
+                        </div>
+                    </div>
+                    <div class="col l-6 m-6 c-12">
+                        <div class="item-example__info">
+                            <h2 class="item-example__name">AXEL - STOOL</h2>
+                            <span class="item-example__type">NEW PRODUCTS</span>
+                            <p class="item-example__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores atque, rerum officiis vitae soluta quo in laudantium consequatur culpa commodi mollitia recusandae inventore maiores sunt blanditiis necessitatibus. Laboriosam, cum veritatis?</p>
+                            <div class="btn buy-btn"><a href="#">BUY NOW</a></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="suggest-collection">
+                <h2 class="collection__heading">SUGGEST COLLECTION</h2>
+                <div class="suggest-collection-list">
+                    <input type="checkbox" hidden id="suggest-collection-checkbox">
+                    <nav>
+                        <a href="#" class="suggest-collection__link suggest-collection__link--active">Office Chair</a>
+                        <a href="#" class="suggest-collection__link">Sofas</a>
+                        <a href="#" class="suggest-collection__link">Good chair</a>
+                        <a href="#" class="suggest-collection__link">Coffee chair</a>
+                        <a href="#" class="suggest-collection__link">Outdoor table</a>
+                        <a href="#" class="suggest-collection__link">Ipsum chair</a>
+                        <a href="#" class="suggest-collection__link">Wood chair</a>
+                        <a href="#" class="suggest-collection__link">Coffee table</a>
+                        <a href="#" class="suggest-collection__link">Living room</a>
+                    </nav>
+                    <label for="suggest-collection-checkbox" class="suggest-collection-checkbox-icon">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                </div>
+                <div class="colection__type-list">
+                    <div class="row no-gutters">
+                        <div class="col l-1-3">
+                            <div class="colection__type colection__type--active">
+                                <a href="#" class="colection__type-link">
+                                    <img src="./img/28-92x110.jpg" alt="" class="colection__type-img">
+                                    <h4 class="colection__type-name">Office chair</h4>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-1-3">
+                            <div class="colection__type">
+                                <a href="#" class="colection__type-link">
+                                    <img src="./img/bedroom-itmg-1.png" alt="" class="colection__type-img colection__type-img--sofa">
+                                    <h4 class="colection__type-name">Sofas</h4>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-1-3">
+                            <div class="colection__type">
+                                <a href="#" class="colection__type-link">
+                                    <img src="./img/5-92x110.jpg" alt="" class="colection__type-img">
+                                    <h4 class="colection__type-name">Good chair</h4>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-1-3">
+                            <div class="colection__type">
+                                <a href="#" class="colection__type-link">
+                                    <img src="./img/Furniture-Design-Chair-Yo5Rxnaa-130x98.jpg" alt="" class="colection__type-img colection__type-img--sm">
+                                    <h4 class="colection__type-name">Coffee chair</h4>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-1-3">
+                            <div class="colection__type">
+                                <a href="#" class="colection__type-link">
+                                    <img src="./img/Ergonomic-Office-Furniture-Design-of-Active-Surface-Table-in-Orange-by-Isis-Concepts-130x98.jpg" alt="" class="colection__type-img colection__type-img--sm">
+                                    <h4 class="colection__type-name">Outdoor table</h4>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-1-3">
+                            <div class="colection__type">
+                                <a href="#" class="colection__type-link">
+                                    <img src="./img/26-215x260.jpg" alt="" class="colection__type-img colection__type-img--l">
+                                    <h4 class="colection__type-name">Iprum chair</h4>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-1-3">
+                            <div class="colection__type">
+                                <a href="#" class="colection__type-link">
+                                    <img src="./img/30-92x110.jpg" alt="" class="colection__type-img">
+                                    <h4 class="colection__type-name">Wood chair</h4>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-1-3">
+                            <div class="colection__type">
+                                <a href="#" class="colection__type-link">
+                                    <img src="./img/23-92x110.jpg" alt="" class="colection__type-img">
+                                    <h4 class="colection__type-name">Coffee tables</h4>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-1-3">
+                            <div class="colection__type">
+                                <a href="#" class="colection__type-link">
+                                    <img src="./img/21-92x110.jpg" alt="" class="colection__type-img">
+                                    <h4 class="colection__type-name">Living room</h4>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="items-list">
+                    <div class="row">
+                        <div class="col l-2-4 m-3 c-12">
+                            <a href="#" class="item-link">
+                                <div class="item item--rated">
+                                    <div class="item-img__wrap">
+                                        <img src="./img/17-215x260.jpg" alt="" class="item-img">
+                                        <div class="btn item-add-btn">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span>ADD TO CART</span>
+                                        </div>
+                                        <ul class="item-react__list">
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--add">
+                                                    <i class="fas fa-heart"></i>
+                                                    <span class="item-react__title">Add to Wishlist</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--compare item-react__link--has-border">
+                                                    <i class="fas fa-random"></i>
+                                                    <span class="item-react__title">Compare</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--view">
+                                                    <i class="far fa-eye"></i>
+                                                    <span class="item-react__title">Quick View</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="#" class="item-name__link">
+                                            <span class="item-name">Modular Modern</span>
+                                        </a>
+                                        <div class="item-price">
+                                            <span class="item-price--new">$ 600.00</span>
+                                        </div>
+                                        <div class="item-rate">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2-4 m-3 c-0">
+                            <a href="#" class="item-link">
+                                <div class="item item--rated item--sale">
+                                    <div class="item-img__wrap">
+                                        <img src="./img/26-215x260.jpg" alt="" class="item-img">
+                                        <div class="btn item-add-btn">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span>ADD TO CART</span>
+                                        </div>
+                                        <ul class="item-react__list">
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--add">
+                                                    <i class="fas fa-heart"></i>
+                                                    <span class="item-react__title">Add to Wishlist</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--compare item-react__link--has-border">
+                                                    <i class="fas fa-random"></i>
+                                                    <span class="item-react__title">Compare</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--view">
+                                                    <i class="far fa-eye"></i>
+                                                    <span class="item-react__title">Quick View</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="#" class="item-name__link">
+                                            <span class="item-name">External/Affiliate Product</span>
+                                        </a>
+                                        <div class="item-price">
+                                            <span class="item-price--old">$ 9.00</span>
+                                            <span class="item-price--new">$ 8.00</span>
+                                        </div>
+                                        <div class="item-rate">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2-4 m-3 c-0">
+                            <a href="#" class="item-link">
+                                <div class="item item--sale">
+                                    <div class="item-img__wrap">
+                                        <img src="./img/10-215x260.jpg" alt="" class="item-img">
+                                        <div class="btn item-add-btn">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span>ADD TO CART</span>
+                                        </div>
+                                        <ul class="item-react__list">
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--add">
+                                                    <i class="fas fa-heart"></i>
+                                                    <span class="item-react__title">Add to Wishlist</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--compare item-react__link--has-border">
+                                                    <i class="fas fa-random"></i>
+                                                    <span class="item-react__title">Compare</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--view">
+                                                    <i class="far fa-eye"></i>
+                                                    <span class="item-react__title">Quick View</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="#" class="item-name__link">
+                                            <span class="item-name">Modular Modern</span>
+                                        </a>
+                                        <div class="item-price">
+                                            <span class="item-price--old">$ 3.00</span>
+                                            <span class="item-price--new">$ 2.00</span>
+                                        </div>
+                                        <div class="item-rate">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2-4 m-3 c-0">
+                            <a href="#" class="item-link">
+                                <div class="item">
+                                    <div class="item-img__wrap">
+                                        <img src="./img/24-215x260.jpg" alt="" class="item-img">
+                                        <div class="btn item-add-btn">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span>ADD TO CART</span>
+                                        </div>
+                                        <ul class="item-react__list">
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--add">
+                                                    <i class="fas fa-heart"></i>
+                                                    <span class="item-react__title">Add to Wishlist</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--compare item-react__link--has-border">
+                                                    <i class="fas fa-random"></i>
+                                                    <span class="item-react__title">Compare</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--view">
+                                                    <i class="far fa-eye"></i>
+                                                    <span class="item-react__title">Quick View</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="#" class="item-name__link">
+                                            <span class="item-name">Variable Product</span>
+                                        </a>
+                                        <div class="item-price">
+                                            <span class="item-price--new">$ 7.00 </span> - <span class="item-price--new">$ 9.00 </span>
+                                        </div>
+                                        <div class="item-rate">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col l-2-4 m-0 c-0">
+                            <a href="#" class="item-link">
+                                <div class="item">
+                                    <div class="item-img__wrap">
+                                        <img src="./img/3-215x260.jpg" alt="" class="item-img">
+                                        <div class="btn item-add-btn">
+                                            <i class="fas fa-shopping-cart"></i>
+                                            <span>ADD TO CART</span>
+                                        </div>
+                                        <ul class="item-react__list">
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--add">
+                                                    <i class="fas fa-heart"></i>
+                                                    <span class="item-react__title">Add to Wishlist</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--compare item-react__link--has-border">
+                                                    <i class="fas fa-random"></i>
+                                                    <span class="item-react__title">Compare</span>
+                                                </a>
+                                            </li>
+                                            <li class="item-react__item">
+                                                <a href="#" class="item-react__link item-react__link--view">
+                                                    <i class="far fa-eye"></i>
+                                                    <span class="item-react__title">Quick View</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-info">
+                                        <a href="#" class="item-name__link">
+                                            <span class="item-name">Modular Modern</span>
+                                        </a>
+                                        <div class="item-price">
+                                            <span class="item-price--new">$ 14.00</span>
+                                        </div>
+                                        <div class="item-rate">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="items-discount">
+                <div class="row">
+                    <div class="col l-6 m-6 c-12">
+                        <div class="items-discount__wrap hover1">
+                            <img src="./img/baner-shipping.jpg" alt="" class="items-discount__img">
+                            <div class="hover1-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-3 c-12">
+                        <div class="items-discount__wrap hover3">
+                            <img src="./img/banner3.jpg" alt="" class="items-discount__img">
+                            <div class="hover3-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="col l-3 m-3 c-12">
+                        <div class="items-discount__wrap hover2">
+                            <img src="./img/banner4.jpg" alt="" class="items-discount__img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="most-viewed">
+                <div class="most-viewed__heading">
+                    <h2 class="most-viewed__heading-text">MOST VIEWED</h2>
+                    <div class="btn btn-slide btn-slide--left"><i class="fas fa-long-arrow-alt-left"></i></div>
+                    <div class="btn btn-slide"><i class="fas fa-long-arrow-alt-right"></i></div>
+                </div>
+                <div class="most-view__list">
+                    <div class="row">
+                        <div class="col l-3 m-4 c-12">
+                            <div class="most-view__item">
+                                <img src="./img/10-215x260.jpg" alt="" class="most-view__item-img">
+                                <div class="most-view__item-info item-info">
+                                    <a href="#" class="item-name__link">
+                                        <span class="item-name">Modular Modern</span>
+                                    </a>
+                                    <div class="item-price">
+                                        <span class="item-price--old">$ 3.00</span>
+                                        <span class="item-price--new">$ 2.00</span>
+                                    </div>
+                                    <div class="item-rate item--yellow">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <a href="#" class="item-action">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span>ADD TO CART</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-12">
+                            <div class="most-view__item">
+                                <img src="./img/24-215x260.jpg" alt="" class="most-view__item-img">
+                                <div class="most-view__item-info item-info">
+                                    <a href="#" class="item-name__link">
+                                        <span class="item-name">Variable Product</span>
+                                    </a>
+                                    <div class="item-price">
+                                        <span class="item-price--new">$ 7.00 </span>-
+                                        <span class="item-price--new">$ 9.00 </span>
+                                    </div>
+                                    <div class="item-rate">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <a href="#" class="item-action">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span>SELECT OPTIONS</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-0">
+                            <div class="most-view__item">
+                                <img src="./img/19-215x260.jpg" alt="" class="most-view__item-img">
+                                <div class="most-view__item-info item-info">
+                                    <a href="#" class="item-name__link">
+                                        <span class="item-name">Modular Modern</span>
+                                    </a>
+                                    <div class="item-price">
+                                        <span class="item-price--new">$ 9.00 </span>
+                                    </div>
+                                    <div class="item-rate item--yellow">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <a href="#" class="item-action">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span>ADD TO CART</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-0 c-0">
+                            <div class="most-view__item">
+                                <img src="./img/15-215x260.jpg" alt="" class="most-view__item-img">
+                                <div class="most-view__item-info item-info">
+                                    <a href="#" class="item-name__link">
+                                        <span class="item-name">Donec cursus</span>
+                                    </a>
+                                    <div class="item-price">
+                                        <span class="item-price--new">$ 15.00 </span>
+                                    </div>
+                                    <div class="item-rate">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <a href="#" class="item-action">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span>ADD TO CART</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row2">
+                        <div class="col l-3 m-4 c-0">
+                            <div class="most-view__item">
+                                <img src="./img/26-215x260.jpg" alt="" class="most-view__item-img">
+                                <div class="most-view__item-info item-info">
+                                    <a href="#" class="item-name__link">
+                                        <span class="item-name">External/Affiliate Product</span>
+                                    </a>
+                                    <div class="item-price">
+                                        <span class="item-price--old">$ 9.00 </span>
+                                        <span class="item-price--new">$ 8.00 </span>
+                                    </div>
+                                    <div class="item-rate">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <a href="#" class="item-action">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span>BUY NOW</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-0">
+                            <div class="most-view__item">
+                                <img src="./img/3-215x260.jpg" alt="" class="most-view__item-img">
+                                <div class="most-view__item-info item-info">
+                                    <a href="#" class="item-name__link">
+                                        <span class="item-name">Modular Modern</span>
+                                    </a>
+                                    <div class="item-price">
+                                        <span class="item-price--new">$ 9.00 </span>
+                                    </div>
+                                    <div class="item-rate item--yellow">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <a href="#" class="item-action">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span>ADD TO CART</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-4 c-0">
+                            <div class="most-view__item">
+                                <img src="./img/28-215x260.jpg" alt="" class="most-view__item-img">
+                                <div class="most-view__item-info item-info">
+                                    <a href="#" class="item-name__link">
+                                        <span class="item-name">Modular Modern</span>
+                                    </a>
+                                    <div class="item-price">
+                                        <span class="item-price--new">$ 9.00 </span>
+                                    </div>
+                                    <div class="item-rate">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <a href="#" class="item-action">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span>ADD TO CART</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-3 m-0 c-0">
+                            <div class="most-view__item">
+                                <img src="./img/11-215x260.jpg" alt="" class="most-view__item-img">
+                                <div class="most-view__item-info item-info">
+                                    <a href="#" class="item-name__link">
+                                        <span class="item-name">Grouped Product</span>
+                                    </a>
+                                    <div class="item-price">
+                                        <span class="item-price--new">$ 9.00 </span>-
+                                        <span class="item-price--new">$ 15.00 </span>
+                                    </div>
+                                    <div class="item-rate item--yellow">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <a href="#" class="item-action">
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <span>VIEW PRODUCTS</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="latest-posts">
+                <div class="latest-posts__heading">
+                    <h2 class="latest-posts__heading-text">LATEST POSTS</h2>
+                    <div class="btn btn-slide btn-slide--left"><i class="fas fa-long-arrow-alt-left"></i></div>
+                    <div class="btn btn-slide"><i class="fas fa-long-arrow-alt-right"></i></div>
+                </div>
+                <div class="latest-posts__list">
+                    <div class="row">
+                        <div class="col l-4 m-6 c-12">
+                            <div class="latest-post">
+                                <div class="hover1">
+                                    <img src="./img/110-370x190.jpg" alt="" class="latest-post__img">
+                                    <div class="hover1-overlay"></div>
+                                </div>
+                                <div class="latest-post__info">
+                                    <div class="latest-post__time">
+                                        <span class="latest-post__day">3</span>
+                                        <span class="latest-post__month">NOV</span>
+                                    </div>
+                                    <div class="latest-post__desc">
+                                        <a href="#" class="latest-post__author">
+                                            <h3>Admin</h3>
+                                        </a>
+                                        <a href="#" class="latest-post__title">
+                                            <span>Richard McClintock at Hampden-Sydney</span>
+                                        </a>
+                                        <p class="lastest-post__excerpt">Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-6 c-0">
+                            <div class="latest-post">
+                                <div class="hover1">
+                                    <img src="./img/2-blog-370x190.jpg" alt="" class="latest-post__img">
+
+                                    <div class="hover1-overlay"></div>
+                                </div>
+                                <div class="latest-post__info">
+                                    <div class="latest-post__time">
+                                        <span class="latest-post__day">3</span>
+                                        <span class="latest-post__month">NOV</span>
+                                    </div>
+                                    <div class="latest-post__desc">
+                                        <a href="#" class="latest-post__author">
+                                            <h3>Admin</h3>
+                                        </a>
+                                        <a href="#" class="latest-post__title">
+                                            <span>Latin professor at Hampden-Sydney</span>
+                                        </a>
+                                        <p class="lastest-post__excerpt">Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-0 c-0">
+                            <div class="latest-post">
+                                <div class="hover1">
+                                    <img src="./img/richard-3-370x190.jpg" alt="" class="latest-post__img">
+                                    <div class="hover1-overlay"></div>
+                                </div>
+                                <div class="latest-post__info">
+                                    <div class="latest-post__time">
+                                        <span class="latest-post__day">3</span>
+                                        <span class="latest-post__month">NOV</span>
+                                    </div>
+                                    <div class="latest-post__desc">
+                                        <a href="#" class="latest-post__author">
+                                            <h3>Admin</h3>
+                                        </a>
+                                        <a href="#" class="latest-post__title">
+                                            <span>Morbi semper eros sit amet mi molestie</span>
+                                        </a>
+                                        <p class="lastest-post__excerpt">Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="brand">
+                <div class="row no-gutters">
+                    <div class="col l-2 m-3 c-12">
+                        <div class="brand-img">
+                            <a href="#">
+                                <img src="./img/avan.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-3 c-0">
+                        <div class="brand-img">
+                            <a href="#">
+                                <img src="./img/lamino.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-3 c-0">
+                        <div class="brand-img">
+                            <a href="#">
+                                <img src="./img/nazic.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-3 c-0">
+                        <div class="brand-img">
+                            <a href="#">
+                                <img src="./img/mbm.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-0 c-0">
+                        <div class="brand-img">
+                            <a href="#">
+                                <img src="./img/nova.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col l-2 m-0 c-0">
+                        <div class="brand-img">
+                            <a href="#">
+                                <img src="./img/avio.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="footer">
+            <section class="footer-main">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-2-4 m-6 c-12">
+                            <div class="footer-item">
+                                <h3 class="footer-item__heading">CONTACT US</h3>
+                                <ul class="footer-item__info">
+                                    <li class="footer-item__hover">
+                                        <div class="footer-item__icon-wrap">
+                                            <i class="fas fa-home"></i>
+                                        </div>
+                                        <span class="footer-item__location">8888 South Avenue Street, New York</span>
+                                    </li>
+                                    <li class="footer-item__hover">
+                                        <div class="footer-item__icon-wrap">
+                                            <i class="fas fa-phone-alt"></i>
+                                        </div>
+                                        <div class="footer-item__phone">
+                                            <span>(12) 3 456 7896</span>
+                                            <span>(12) 3 456 7895</span>
+                                        </div>
+                                    </li>
+                                    <li class="footer-item__hover">
+                                        <div class="footer-item__icon-wrap">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="footer-item__mail">
+                                            <a href="mailto:contact@simen.com">contact@simen.com</a>
+                                            <a href="mailto:info@simen.com">info@simen.com</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-6 c-12">
+                            <div class="footer-item">
+                                <h3 class="footer-item__heading">SERVICE</h3>
+                                <ul class="footer-item__list">
+                                    <li class="footer-item__item"><a href="#" class="footer-item__link">Prices & Currencies</a></li>
+                                    <li class="footer-item__item"><a href="#" class="footer-item__link">Secure Payment</a></li>
+                                    <li class="footer-item__item"><a href="#" class="footer-item__link">Delivery Times & Costs</a></li>
+                                    <li class="footer-item__item"><a href="#" class="footer-item__link">Returns & Exchanges</a></li>
+                                    <li class="footer-item__item"><a href="#" class="footer-item__link">FAQ’s</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-6 c-12">
+                            <div class="footer-item">
+                                <h3 class="footer-item__heading">ACCOUNT</h3>
+                                <ul class="footer-item__list">
+                                    <li class="footer-item__item"><a href="#" class="footer-item__link">My Account</a></li>
+                                    <li class="footer-item__item"><a href="#" class="footer-item__link">Wishlist</a></li>
+                                    <li class="footer-item__item"><a href="#" class="footer-item__link">Order History</a></li>
+                                    <li class="footer-item__item"><a href="#" class="footer-item__link">Specials</a></li>
+                                    <li class="footer-item__item"><a href="#" class="footer-item__link">Gift Vouchers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-6 c-12">
+                            <div class="footer-item">
+                                <h3 class="footer-item__heading">INFORMATION</h3>
+                                <ul class="footer-item__list">
+                                    <li class="footer-item__item"><a href="#" class="footer-item__link">My Account</a></li>
+                                    <li class="footer-item__item"><a href="#" class="footer-item__link">Wishlist</a></li>
+                                    <li class="footer-item__item"><a href="#" class="footer-item__link">Order History</a></li>
+                                    <li class="footer-item__item"><a href="#" class="footer-item__link">Specials</a></li>
+                                    <li class="footer-item__item"><a href="#" class="footer-item__link">Gift Vouchers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col l-2-4 m-6 c-12">
+                            <div class="footer-item">
+                                <h3 class="footer-item__heading">NEWLETTER</h3>
+                                <div class="footer-item__action">
+                                    <span class="footer-item__register">Register your email for news</span>
+                                    <input type="text" placeholder="Your email here" class="footer-item__input">
+                                    <div class="btn btn-subcribe">SUBCRIBE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-bottom">
+                <div class="grid wide">
+                    <div class="row footer-bottom-list">
+                        <div class="col l-6 m-12 c-12">
+                            <span class="footer-copyright"> © 2021 Ecommerce software by Wordpress™ Designed by SNSTheme.Com</span>
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="footer-payment">
+                                <img src="./img/payment.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="back-to-top">
+            <a href="#">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

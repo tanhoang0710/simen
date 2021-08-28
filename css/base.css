@@ -1,0 +1,323 @@
+:root {
+    --red-color: #e34444;
+    --text-color-bold: #333;
+    --white-color: #fff;
+    --text-color: #6e6c6c;
+    --border-color: #88888833;
+    --bg-color: #eaeaea;
+    --sub-bg-color: #f0f0f0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* SHAKE */
+
+@keyframes shake {
+    0% {
+        transform: translate(0,0);
+    }
+    6% {
+        transform: translate(5px,0);
+    }
+    12% {
+        transform: translate(0,0);
+    }
+    18% {
+        transform: translate(5px,0);
+    }
+    24% {
+        transform: translate(0,0);
+    }
+    30% {
+        transform: translate(5px,0);
+    }
+    100%,36% {
+        transform: translate(0,0);
+    }
+}
+
+/* HOVER EFFECT */
+
+.hover1 {
+    position: relative;
+    cursor: pointer;
+}
+
+.hover1 .hover1-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    bottom: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.hover1:hover.hover1::before {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.hover1:hover.hover1::after {
+    transform: scale(1);
+    opacity: 1;
+}
+.hover1:hover .hover1-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.hover1::before {
+    content: "";
+    position: absolute;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+    inset: 15px;
+    transform: scale(0,1);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.hover1::after {
+    content: "";
+    position: absolute;
+    border-left: 1px solid rgba(255, 255, 255, 0.8);
+    border-right: 1px solid rgba(255, 255, 255, 0.8);
+    inset: 15px;
+    transform: scale(1,0);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.hover2 {
+    position: relative;
+    cursor: pointer;
+}
+
+.hover2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 98%;
+    width: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.hover2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 98%;
+    width: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.hover2:hover.hover2::before {
+    visibility: visible;
+    opacity: 1;
+    width: 50%;
+}
+
+.hover2:hover.hover2::after {
+    visibility: visible;
+    opacity: 1;
+    width: 50%;
+}
+
+.hover3 {
+    position: relative;
+    cursor: pointer;
+}
+
+.hover3::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    height: 1px;
+    width: 60px;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.4s ease;
+}
+
+.hover3::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 60px;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: all 0.4s ease;
+}
+
+.hover3:hover.hover3::after {
+    visibility: visible;
+    opacity: 0.4;
+}   
+
+.hover3:hover.hover3::before {
+    visibility: visible;
+    opacity: 0.4;
+} 
+
+.hover3-overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 98%;
+    transform: scale(0.4) rotateY(0deg);
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+.hover3:hover .hover3-overlay {
+    transform: scale(1) rotateY(180deg);
+    opacity: 1;
+}
+
+/* IMG SLIDE */
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.slides {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide-img1,
+.slide-img3,
+.slide-img2 {
+    width: 100%;
+    transition: all .5s linear;
+    height: 100%;
+}
+
+.slide-btns {
+    position: relative;
+    width: 100%;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.slide-btn:not(:first-child) {
+    margin-left: 12px;
+}
+
+.slide-btn{
+    padding: 5px;
+    border: 2px solid #666;
+    background-color: var(--white-color);
+}
+
+.slide-btn:hover {
+    background-color: var(--red-color);
+    border-color: var(--red-color);
+    transition: all 0.2s linear;
+}
+
+#slide1:checked ~.slide-img1 {
+    margin-left: -100%;
+}
+
+#slide2:checked ~.slide-img2 {
+    margin-left: -100%;
+}
+
+#slide3:checked ~.slide-img3 {
+    margin-left: -100%;
+}
+
+
+/* BTN */
+
+.btn {
+    background-color: #333;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 6px 25px;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--red-color);
+    color: var(--white-color);
+}
+
+.btn-slide {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    min-width: unset;
+    background-color: var(--white-color);
+    border: 1px solid var(--border-color);
+    color: #ccc;
+}
+
+.row2 {
+    margin-top: 20px;
+}
